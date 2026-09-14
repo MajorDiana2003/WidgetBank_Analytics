@@ -1,7 +1,18 @@
 .venv/
-.env
 .idea/
 __pycache__/
 *.pyc
 data/operations.xlsx
 data/operations.xls
+
+# Секретные ключи и переменные окружения
+.env
+
+# Файлы кэша инструментов проверки
+.pytest_cache/
+.mypy_cache/
+
+.coverage
+htmlcov/
+logs/
+data/report_*.xlsx

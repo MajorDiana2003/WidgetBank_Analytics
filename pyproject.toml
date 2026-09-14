@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "widgetbank-analytics"
+version = "0.1.0"
+description = "Курсовая работа по анализу банковских транзакций"
+authors = ["Diana Mayorova <dukaidiana18@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.0"
+openpyxl = "^3.1.0"
+xlrd = "^2.0.1"
+requests = "^2.31.0"
+yfinance = "^1.7.0"
+python-dotenv = "^1.2.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+flake8 = "^7.0.0"
+black = "^24.1.0"
+isort = "^5.13.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+
+[tool.isort]
+profile = "black"
+line_length = 119
